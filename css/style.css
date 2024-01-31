@@ -1,12 +1,13 @@
-:root{
-/* Color */
-    --color-white: #fff;
-    --color-black: #050a13;
-    --color-blue: #03e8f9;
-    --color-orange: #fd6413;
-    --color-gray: #1b1e26;
+/* Global */
+:root {
+    /* Colors */
+        --color-white: #fff;
+        --color-black: #050a13;
+        --color-blue: #03e8f9;
+        --color-orange: #fd6413;
+        --color-gray: #1b1e26;
 
-/*App Color */
+    /* App Colors */
     --color-primary: var(--color-black);
     --color-primary-variant: var(--color-gray);
 
@@ -15,91 +16,91 @@
     --color-text: var(--color-white);
 }
 
-
-*{
+* {
     box-sizing: border-box;
 }
-
-body{
-    font-family: 'Preahvihear', sans-serif;
-    margin: 0;
-    padding: 0;
+html {
+    scroll-behavior: smooth;
+}
+html, body {
+    font-family: 'roboto', sans-serif;
+    font-size: 10pt;
+    margin: 0px;
+    padding: 0px;
 }
 
-h1, h2, h3, p, ul{
-    margin: 0;
-    padding: 0;
+h1, h2, h3, p, ul, * {
+    margin: 0px;
+    padding: 0px;
 }
-ul{
+
+ul, ol, li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color-text);
 }
 
-button{
-    background-color: transparent;
-    outline: 0;
-    border: 0;
-}
-
-button:focus{
-    outline: 1px solid var(--color-accent);
-}
-.header{
+/* header 시작 ============== */
+.header {
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
     background: #050a13;
     padding: 1rem;
+    z-index: 999;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-    .header_logo{
+    .header.header-dark {
+        background-color: #f90;
+    }
+
+
+
+
+
+
+
+
+    .header_logo {
         display: flex;
         align-items: center;
         gap: 8px;
-        width: 20%;
     }
-
-        .header_logo_img{
+        .header_logo_img {
             width: 34px;
             height: 34px;
         }
-
-        .header_logo_title{
+        .header_logo_title {
             font-size: 1.8rem;
         }
-
-    .header_menu{
+    .header_nav {
         display: flex;
-        gap: 4px;
+        justify-content: flex-end;
     }
-
-        .header_menu_item{
-            display: block;
-            padding: 8px 16px;
-            border-bottom: 1px solid transparent;
-            transition: all 1.5s;
-    
+        .header_menu {
+            display: flex;
+            gap: 4px;
         }
+            .header_menu_item {
+                display: block;
+                padding: 8px 16px;
+                border-bottom: 1px solid transparent;
+            }
+            .header_menu_item:hover {
+                border-bottom: 1px solid var(--color-accent);
+            }
+            .hamburger {
+                display: none;
+            }
 
-        .header_menu_item.active{
-            border: 1px solid var(--color-accent);
-            border-radius: 4px;
-        }
 
-        .header_menu_item:hover {
-            border-bottom: 1px solid var(--color-accent);
-            border-radius: 4px;
-            transition: all 1.5s;
-        }
 
-    .hambuger{
-        display: none;
-    }
+
 
