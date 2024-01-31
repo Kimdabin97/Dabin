@@ -17,7 +17,7 @@
 
     <script type="module" src="./js/top.js" defer> </script>
     <script type="module" src="./js/hamburger.js" defer> </script>
-
+    <script type="module" src="./js/main.js" defer> </script>
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,9 +65,12 @@
                     <hr class="line_01">
 
                     <div class="main_text_02">
-                        <a href="https://kimdabin97.github.io/profile/index.html" target="_self">
-                            <div class="git_link"> https://kimdabin97.github.io/profile/index.html </div>
-                        </a>
+                        
+                            <a href="https://kimdabin97.github.io/profile/index.html" target="_self">
+                                <div class="git_link"> https://kimdabin97.github.io/profile/index.html </div>
+                            </a>
+                        
+                        Web Engineer<br>
                         <strong class="main_text_st"> Kim Da Bin </strong>
                     </div>
 
@@ -139,7 +142,7 @@
                         <h3 class="skill_title">
                             Coding Skills
                         </h3>
-                        <ul>
+                        <ul class="skill_top">
                             <li class="skill_bar">
                                 <div class="bar_text">
                                     <span> HTML5 </span>
@@ -214,34 +217,34 @@
      
                 <ul class="category">
                      <li> 
-                         <button class="category_button category_selected"> All
+                         <button class="category_button category_selected" data-category="all"> All
                              <span class="work_count"> 8 </span>
                          </button>
                      </li>
      
                      <li> 
-                         <button class="category_button"> Front-end
+                         <button class="category_button" data-category="front-end"> Front-end
                              <span class="work_count"> 3 </span>
                          </button>
                      </li>
      
                      <li> 
-                         <button class="category_button"> Design
+                         <button class="category_button" data-category="design"> Design
                              <span class="work_count"> 3 </span>
                          </button>
                      </li>
      
                      <li> 
-                         <button class="category_button"> Mobile
+                         <button class="category_button" data-category="mobile"> Mobile
                              <span class="work_count"> 2 </span>
                          </button>
                      </li>
                 </ul>
      
                 <ul class="project_all">
-                     <li class="project">
+                     <li class="project" data-type="mobile">
                          <a href="#" target="_blank">
-                             <img src="images/front_01.png" alt="project_01 이미지" class="project_img"/>
+                             <img src="images/mob_01.png" alt="project_01 이미지" class="project_img"/>
                              <div class="project_text">
                                  <h3 class="project_title"> Project #1 </h3>
                                  <p> My Work </p>
@@ -249,7 +252,7 @@
                          </a>
                      </li>
      
-                     <li class="project">
+                     <li class="project" data-type="design">
                          <a href="#" target="_blank">
                              <img src="images/photo_01.png" alt="project_02 이미지" class="project_img"/>
                              <div class="project_text">
@@ -259,7 +262,7 @@
                          </a>
                      </li>
      
-                     <li class="project">
+                     <li class="project" data-type="design">
                          <a href="#" target="_blank">
                              <img src="images/photo_02.png" alt="project_03 이미지" class="project_img" />
                              <div class="project_text">
@@ -269,7 +272,7 @@
                          </a>
                      </li>
      
-                     <li class="project">
+                     <li class="project" data-type="design">
                          <a href="#" target="_blank">
                              <img src="images/photo_03.png" alt="project_04 이미지" class="project_img"/>
                              <div class="project_text">
@@ -279,7 +282,7 @@
                          </a>
                      </li>
      
-                     <li class="project">
+                     <li class="project" data-type="design">
                          <a href="#" target="_blank">
                              <img src="images/illust_01.jpg" alt="project_05 이미지" class="project_img"/>
                              <div class="project_text">
@@ -289,7 +292,7 @@
                          </a>
                      </li>
      
-                     <li class="project">
+                     <li class="project" data-type="design">
                          <a href="#" target="_blank">
                              <img src="images/illust_02.jpg" alt="project_06 이미지" class="project_img"/>
                              <div class="project_text">
@@ -299,7 +302,7 @@
                          </a>
                      </li>
      
-                     <li class="project">
+                     <li class="project" data-type="design">
                          <a href="#" target="_blank">
                              <img src="images/illust_03.jpg" alt="project_07 이미지" class="project_img"/>
                              <div class="project_text">
@@ -309,9 +312,9 @@
                          </a>
                      </li>
      
-                     <li class="project">
+                     <li class="project project_08" data-type="front-end">
                          <a href="#" target="_blank">
-                             <img src="images/image_01.png" alt="project_08 이미지" class="project_img"/>
+                             <img src="images/front_01.png" alt="project_08 이미지" class="project_img"/>
                              <div class="project_text">
                                  <h3 class="project_title"> Project #8 </h3>
                                  <p> My Work </p>
